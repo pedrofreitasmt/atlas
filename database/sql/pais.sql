@@ -1,21 +1,21 @@
 --
--- Estrutura da tabela "pais"
+-- Estrutura da tabela "countries"
 --
 
-DROP TABLE IF EXISTS `pais`;
-CREATE TABLE `pais` (
+DROP TABLE IF EXISTS `countries`;
+CREATE TABLE `countries` (
   `id` int(11) NOT NULL,
-  `nome` varchar(60) DEFAULT NULL,
-  `nome_pt` varchar(60) DEFAULT NULL,
-  `sigla` varchar(2) DEFAULT NULL,
+  `name` varchar(60) DEFAULT NULL,
+  `name_pt` varchar(60) DEFAULT NULL,
+  `acronym` varchar(2) DEFAULT NULL,
   `bacen` int(5) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Países e Nações';
 
 --
--- Inserindo dados na tabela "pais"
+-- Inserindo dados na tabela "countries"
 --
 
-INSERT INTO `pais` (`id`, `nome`, `nome_pt`, `sigla`, `bacen`) VALUES
+INSERT INTO `countries` (`id`, `name`, `name_pt`, `acronym`, `bacen`) VALUES
 (1, 'Brazil', 'Brasil', 'BR', 1058),
 (2, 'Afghanistan', 'Afeganistão', 'AF', 132),
 (3, 'Albania', 'Albânia, Republica da', 'AL', 175),
@@ -272,8 +272,8 @@ INSERT INTO `pais` (`id`, `nome`, `nome_pt`, `sigla`, `bacen`) VALUES
 (263, 'Terres Australes et Antarctiques Françaises', 'Terras Austrais e Antárcticas Francesas', 'TF', 7811);
 
 --
--- Indexes for table "pais"
+-- Indexes for table "countries"
 --
 
-ALTER TABLE `pais`
+ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);

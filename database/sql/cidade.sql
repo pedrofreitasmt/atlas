@@ -1,20 +1,20 @@
 --
--- Estrutura da tabela "cidade"
+-- Estrutura da tabela "cities"
 --
 
-DROP TABLE IF EXISTS `cidade`;
-CREATE TABLE `cidade` (
+DROP TABLE IF EXISTS `cities`;
+CREATE TABLE `cities` (
   `id` int(11) NOT NULL,
-  `nome` varchar(120) DEFAULT NULL,
+  `name` varchar(120) DEFAULT NULL,
   `uf` int(2) DEFAULT NULL,
   `ibge` int(7) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Municipios das Unidades Federativas';
 
 --
--- Inserindo dados na tabela "cidade"
+-- Inserindo dados na tabela "cities"
 --
 
-INSERT INTO `cidade` (`id`, `nome`, `uf`, `ibge`) VALUES
+INSERT INTO `cities` (`id`, `name`, `uf`, `ibge`) VALUES
 (1, 'Afonso Cláudio', 8, 3200102),
 (2, 'Água Doce do Norte', 8, 3200169),
 (3, 'Águia Branca', 8, 3200136),
@@ -5615,8 +5615,8 @@ INSERT INTO `cidade` (`id`, `nome`, `uf`, `ibge`) VALUES
 (5610, 'Exterior', 99, 9999999);
 
 --
--- Indexes for table "cidade"
+-- Indexes for table "cities"
 --
 
-ALTER TABLE `cidade`
+ALTER TABLE `cities`
   ADD PRIMARY KEY (`id`);
